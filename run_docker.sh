@@ -2,7 +2,7 @@
 
 # Step 1:
 # Build image and add a descriptive tag
-docker build -t jmcguirk/k8sapp .
+docker build -t k8sapp .
 
 # Step 2: 
 # List docker images

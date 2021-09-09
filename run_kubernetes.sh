@@ -8,7 +8,7 @@ dockerpath=johnmac81/k8sapp
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl create deployment k8sapp --image=johnmac81/k8sapp
+kubectl create deployment k8sapp --image=johnmac81/k8sapp --port=80
 
 # Step 3:
 # List kubernetes pods

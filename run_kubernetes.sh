@@ -17,3 +17,5 @@ kubectl get pods --all-namespaces
 # Step 4:
 # Forward the container port to a host
 kubectl expose deployment k8sapp --type="NodePort" --port=80
+# kubectl expose deployment k8sapp --type=LoadBalancer --port=80
+# kubectl expose deployment k8sapp --type=LoadBalancer --name=k8sapp-service --port=80 --target-port=80

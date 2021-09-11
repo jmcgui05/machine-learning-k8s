@@ -1,1 +1,18 @@
-<paste log output from Kubernetes-mediated prediction, here>
+(.devops) ➜  machine-learning-k8s git:(main) ✗ kubectl get pods
+NAME                      READY   STATUS    RESTARTS   AGE
+k8sapp-7dc55669bd-6tq9g   1/1     Running   0          10s
+(.devops) ➜  machine-learning-k8s git:(main) ✗ bash run_kubernetes.sh
+error: failed to create deployment: deployments.apps "k8sapp" already exists
+NAMESPACE     NAME                               READY   STATUS    RESTARTS       AGE
+default       k8sapp-7dc55669bd-6tq9g            1/1     Running   0              14s
+kube-system   coredns-78fcd69978-s9mxm           1/1     Running   2 (25h ago)    3d
+kube-system   etcd-minikube                      1/1     Running   2 (25h ago)    3d
+kube-system   kube-apiserver-minikube            1/1     Running   2 (25h ago)    3d
+kube-system   kube-controller-manager-minikube   1/1     Running   2 (25h ago)    3d
+kube-system   kube-proxy-fl4bc                   1/1     Running   2 (25h ago)    3d
+kube-system   kube-scheduler-minikube            1/1     Running   2 (25h ago)    3d
+kube-system   storage-provisioner                1/1     Running   29 (69m ago)   3d
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+Handling connection for 8000
